@@ -29,6 +29,10 @@ public class Car {
     }
 
     public void setYear(Integer yr) {
+        if(yr>=1990 && yr<=2090){
         year = yr;
+        }else{
+            System.out.println("Invalid year. Please enter a year between 1990 and 2090.");
+        }
     }
 }
